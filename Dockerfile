@@ -34,6 +34,7 @@ RUN apk add --no-cache --virtual .rundeps libcurl libuuid && \
     build-base \
     clang15 \
     llvm15 \
+    pkgconfig \
     cmake && \
 
     mkdir -p ${CLICKHOUSE_FDW_SOURCE_FILES} && \
