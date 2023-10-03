@@ -1,4 +1,4 @@
-FROM bitnami/postgresql:16.0.0-debian-11-r5
+FROM postgis/postgis:16-3.4-alpine
 
 ARG MYSQL_FDW_VERSION=2_9_1
 ARG MYSQL_FDW_URL=https://github.com/EnterpriseDB/mysql_fdw/archive/REL-${MYSQL_FDW_VERSION}.tar.gz
