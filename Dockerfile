@@ -29,7 +29,7 @@ ARG CLICKHOUSE_FDW_SOURCE_FILES=/tmp/clickhouse_fdw
 #     rm -rf ${MYSQL_FDW_SOURCE_FILES}
 
     # clickhouse_fdw
-RUN apk add --no-cache --virtual .rundeps libcurl uuid && \
+RUN apk add --no-cache --virtual .rundeps libcurl libuuid && \
     apk add --no-cache --virtual .builddeps \
     build-base \
     clang15 \
