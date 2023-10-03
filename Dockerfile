@@ -1,4 +1,4 @@
-FROM postgis/postgis:16-3.4-alpine
+FROM postgis/postgis:14-3.4-alpine
 
 ARG MYSQL_FDW_URL=https://github.com/EnterpriseDB/mysql_fdw/archive/REL-2_9_1.tar.gz
 ARG MYSQL_FDW_SOURCE_FILES=/tmp/mysql_fdw
