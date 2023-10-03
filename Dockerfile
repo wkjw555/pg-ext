@@ -8,7 +8,7 @@ ARG SOURCE_FILES=/tmp/mysql_fdw
 RUN apk add --no-cache --virtual .rundeps mariadb-dev && \
     apk add --no-cache --virtual .builddeps \
     build-base \
-    clang \
+    clang && \
     # postgres 12.2 requires llvm9, 12.4 - already llvm10
     # llvm10 && \
     # download MYSQL_FDW source files
