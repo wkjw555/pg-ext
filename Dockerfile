@@ -33,8 +33,8 @@ RUN apk add --no-cache --virtual .builddeps \
     build-base \
     clang15 \
     llvm15 \
-    libcurl-dev \
-    libuuid-dev \
+    curl-dev \
+    util-linux-dev \
     pkgconfig \
     cmake && \
 
