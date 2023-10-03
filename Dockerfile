@@ -33,7 +33,8 @@ RUN apk add --no-cache --virtual .rundeps libcurl libuuid && \
     apk add --no-cache --virtual .builddeps \
     build-base \
     clang15 \
-    llvm15 && \
+    llvm15 \
+    cmake && \
 
     mkdir -p ${CLICKHOUSE_FDW_SOURCE_FILES} && \
     wget -O - ${CLICKHOUSE_FDW_URL} | tar -zx -C ${CLICKHOUSE_FDW_SOURCE_FILES} --strip-components=1 && \
